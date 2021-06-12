@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +10,92 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navbar{
+  background-color: #2e64e515;
+  font-family: 'Playfair Display', serif;
+}
+.menu_active {
+       font-weight: bold;
+       border-bottom: 1px solid #565387;
+}
+#header {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: teal;
+  font-family: 'Merriweather', serif;
+  justify-content: center;
+}
+#header h1,h5{
+  margin: 0 0 10px 0;
+  font-size: 35px;
+  font-weight: 400;
+  color: white;
+  margin-top: 100px;
+}
+#header .brand_name{
+  color: #3498db;
+}
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: white;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+#header .btn-get-started:hover{
+  background: #3498db;
+  color: white;
+}
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+.cont{
+  background-color: #3498db;
+  height: 100vh;
+}
+.cont h1 {
+  font-family: 'Merriweather', serif;
+
+}
+.container {
+  height: 80vh;
+  border: 1px solid white;
+  border-bottom-left-radius: 10px;  
+  border-top-right-radius: 10px;
+  
+}
+.form{
+  margin-left : 500px;
+  padding-top: 30px;
+}
+.service {
+  background-color: teal;
+  height: 100vh;
+}
+.ri{
+  padding-top: 10%;
+  margin-left: 17%;
+}
+
