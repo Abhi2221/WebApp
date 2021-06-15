@@ -1,10 +1,16 @@
 import React from 'react';
+import Same from './Same';
+import covid from '../image/covid.jpg';
 
 const About = () => {
   return (
-    <div className="About">
-     <h1>heyy About</h1>
-    </div>
+    <>
+      <Same 
+        name="Welcome to About Page"
+        imgsrc={covid}
+        visit="/contact"
+        btname="Contact Us" />
+    </>
   );
 }
 
